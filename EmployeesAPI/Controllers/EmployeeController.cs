@@ -65,8 +65,13 @@ namespace EmployeesAPI.Controllers
             {
                 return NotFound();
             }
-            dbEmployee.name = updateEmployee.name;
-            dbEmployee.email = updateEmployee.email;
+            dbEmployee.FirstName = updateEmployee.FirstName;
+            dbEmployee.LastName = updateEmployee.LastName;
+            dbEmployee.Email= updateEmployee.Email;
+            dbEmployee.DateOfBirth= updateEmployee.DateOfBirth;
+            dbEmployee.JobTitle= updateEmployee.JobTitle;
+            dbEmployee.Salary= updateEmployee.Salary;
+            
 
             return Ok(dbEmployee);
 
